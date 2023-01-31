@@ -390,14 +390,73 @@
         </p>
         <div class="flex">
           <div class="flex-item google-map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.5096836444022!2d106.67765461428696!3d10.772220662218167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752fca39e3b493%3A0x865af6a617c57d82!2zVHJ1bmcgVMOibSDEkMOgbyBU4bqhbyBM4bqtcCBUcsOsbmggQ3liZXJTb2Z0IC0gQ8ahIFPhu58gUXXhuq1uIDMsIFRQLkhDTQ!5e0!3m2!1svi!2s!4v1675135161154!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.5096836444022!2d106.67765461428696!3d10.772220662218167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752fca39e3b493%3A0x865af6a617c57d82!2zVHJ1bmcgVMOibSDEkMOgbyBU4bqhbyBM4bqtcCBUcsOsbmggQ3liZXJTb2Z0IC0gQ8ahIFPhu58gUXXhuq1uIDMsIFRQLkhDTQ!5e0!3m2!1svi!2s!4v1675135161154!5m2!1svi!2s"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
-          <div class="flex-item form-contact"></div>
+          <div class="flex-item form-contact">
+            <form>
+              <input type="text" placeholder="Username" />
+              <input type="email" placeholder="Email Address" />
+              <textarea placeholder="Ask a quesrion..."></textarea>
+              <button type="submit">Submit</button>
+            </form>
+          </div>
         </div>
       </div>
     </section>
 
-    <footer></footer>
+    <footer>
+      <div class="container">
+        <div class="flex">
+          <div class="flex-item">© 2021 UI-CYBERSOFT. ALL RIGHTS RESERVED.</div>
+          <div class="flex-item" style="text-align: right">
+            <span class="item">
+              <i class="fab fa-facebook-f"></i>
+            </span>
+            <span class="item">
+              <i class="fab fa-linkedin-in"></i>
+            </span>
+            <span class="item">
+              <i class="fab fa-youtube"></i>
+            </span>
+            <span class="item">
+              <i class="fab fa-twitter"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--Các thẻ về form-->
+    <!--
+    form (block): là thẻ chứa nội dung để người dùng nhập liệu
+      action: nơi mà form sẽ gửi dữ liệu đến đó
+      method: phương thức gửi dữ liệu đến file đó (POST,PUT,GET,DELETE)
+    ----- Các thẻ control trong form --------
+    input (inline): là thẻ chứa nội dung người dùng nhập liệu
+      type
+        + text : nội dung nhập liệu là văn bản
+        + password: nội dung nhập liệu sẽ bảo mật không copy được
+        + date: nội dung nhập là ngày tháng năm
+        + number : nội dung nhập liệu là số
+        + color: nội dung nhập liệu là màu sắc
+        + radio: khi chọn sẽ lấy giá trị value (chỉ được chọn 1 trong nhiều kết quả). Lưu ý: các lựa chọn sẽ cùng thuộc tính là name. Có thể dùng attribute checked để setup giá trị mặc định cho input radio
+        + checkbox: khi chọn giá trị sẽ lấy tất cả value được chọn (chọn nhiều kết quả). Lưu ý: các lựa chọn cùng thuộc tính là name, có thể setup giá trị mặc định = checked như radio
+    select : tương tự radio button tuy nhiên cách hiển thị sẽ tối ưu hơn. các lựa chọn sẽ nằm bên trong các thẻ option. Để chọn nhiều giá trị trên select ta dùng attribute multiple (người dùng đè ctrl hoặc cmd để chọn các lựa chọn).
+    textarea: tương tự input[type="text"]. Tuy nhiên dữ liệu nhập được phép xuống dòng. có thể chỉnh width height = css hoặc rows và cols
+    ----- button -----
+    button: là nút xử lý trên form
+      type: submit (default) gửi dữ liệu về action của form.
+      type: reset clear hết dữ liệu nhập trên form
+      type: button tuỳ vào trường hợp và dev sẽ code xử lý
+
+  -->
 
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
