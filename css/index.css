@@ -405,3 +405,94 @@ carousel
   transform: translateY(0);
   transition: all 1s;
 }
+/*
+count up
+*/
+
+.statis {
+  background-color: #000;
+  height: 250px;
+  color: #fefefe;
+}
+
+.statis .pbox {
+  display: flex;
+  
+  height: 250px;
+  justify-content: center;
+  align-items: center;
+}
+
+.statis .pbox .box {
+
+  padding: 50px;
+  text-align: center;
+}
+
+.statis .box .count{
+  font-size: 60px;
+  font-weight: 200;
+  color: #fefefe;
+}
+
+.statis .box .title-desc {
+  font-size: 20px;
+  color: #888888;
+}
+
+/*-----------Digital---------*/
+.digital {
+  background: url(../image-video/bussiness_img_1.jpg);
+  
+}
+
+.digital .container {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.digital .title{
+  color: red;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.digital .content-title{
+  color: #fefefe;
+  font-size: 50px;
+  font-weight: 500;
+}
+
+.digital p {
+  color: gray;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 0 350px;
+}
+
+/*-----------Contact---------*/
+.contact {
+  text-align: center;
+}
+.contact .container {
+  padding: 100px 0;
+}
+.contact h1 {
+  color: #000;
+  font-size: 50px;
+  font-weight: 400;
+}
+
+.contact p {
+  padding: 20px 0;
+  font-size: 16px;
+  font-weight: 400;
+  color: #888888;
+  width: 40%;
+  margin: 0 auto;
+}
+
+.contact .flex {
+  display: flex;
+  flex-wrap: wrap;
+}
